@@ -1,0 +1,3 @@
+__pycache__/*
+domostats/__pycache__/*
+*.sqlite
