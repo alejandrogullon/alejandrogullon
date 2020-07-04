@@ -1,16 +1,16 @@
-### Create new environment
-```bash
+Create new environment
+```
 virtualenv -p python3 testing_env 
 ```
-### Init environment
+Init environment
 ```
 source testing_env/bin/activate
 ```   
-### Install packages
+Install packages
 ```
 pip3 install -r requirements.txt
 ```
-### Run server
+Run server
 ```
 python3 manage.py runserver 0:8000
 ```
