@@ -1,5 +1,5 @@
 alejandrogullon/__pycache__/*
 domostats/__pycache__/*
-*.sqlite
+*.sqlite3
 testing_env/*
 .vscode/*
