@@ -1,5 +1,8 @@
 alejandrogullon/__pycache__/*
-domostats/__pycache__/*
+domostatsApp/__pycache__/*
+domostatsApp/migrations/*
+home/__pycache__/*
+home/migrations/*
 *.sqlite3
 testing_env/*
 .vscode/*
