@@ -2,8 +2,14 @@ from django.http import HttpResponse
 from django.shortcuts import render
 from django.views.decorators.http import require_GET
 
+import sys
+sys.path.insert(1, '/home/pi/workspace/domostats/')
+import temperature, hue_requests
+
 def index(request):
-    return render(request, 'home/home.html')
+    hue_requests.set_endpoint()
+    text = temperature.all_rooms()
+    return render(request, 'domostatsApp/domostatsApp.html', {'text' : text })
 
 @require_GET
 def robots_txt(request):
