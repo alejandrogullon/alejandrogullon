@@ -1,8 +1,8 @@
 from django.http import HttpResponse
 from django.shortcuts import render
 
-import sys
-sys.path.insert(1, '/home/pi/workspace/domostats/')
+import sys, os
+sys.path.append(os.path.join(os.path.dirname(__file__), "../../domostats/"))
 import temperature, hue_requests
 
 def index(request):
